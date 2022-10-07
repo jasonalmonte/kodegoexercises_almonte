@@ -44,22 +44,4 @@ fun main() {
     var degreeC:String = ""
     var majorC:String = ""
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
