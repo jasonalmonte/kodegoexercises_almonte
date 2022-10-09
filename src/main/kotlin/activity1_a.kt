@@ -1,29 +1,63 @@
 import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
 fun main(){
 
+    //INFORMATION DIRECTORY
     var firstname:String = ""
     var middlename:String = ""
     var lastname:String = ""
-    var fullname:String = "$firstname $middlename $lastname"
+    var fullName:String = "$firstname $middlename $lastname"
     var facebook:String = ""
     var emailAddress:String = ""
     var course:String = ""  //MD2P
     var batch:Int  //2022
-    var progressStatus:Boolean = false  //Pass / Fail / Incomplete
+    var activeStudent:Boolean = false
 
+    var formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
+    var dateToday = LocalDateTime.now().format(formatter)
 
+    //EXAM
+    var examID:Int
+    var examDate = dateToday
+    var examGrade:Double = 0.0
+    var examComment:String? = null
+
+    //EXERCISES
+    var exerciseID:Int
+    var exerciseDate = dateToday
+    var exerciseGrade:Double = 0.0
+    var exerciseComment:String? = null
+
+    //ATTENDANCE
     var attendance:Boolean
-    var timeIn = LocalDateTime.now()
+    var timeIn = dateToday
+
+    //STUDENT PROGRESS
+    var asOfToday = dateToday
     var grades:Double = 0.0
+    var exam:Double = 0.0
+    var exercises:Double = 0.0
+    var attendanceGrades:Double = 0.0
 
+    //PASSING GRADES
+    var progressPassing:Int = 80
+    var activeStudentIndicator:Int = 20
 
+    var progressStatus:Boolean = false
+    progressStatus = ((grades + exam + exercises + attendanceGrades)/4 > progressPassing)
+    activeStudent = ((grades + exam + exercises + attendanceGrades)/4 > activeStudentIndicator)
 
+    if (progressStatus){
+        println("$fullName Passed!")
+    }else{
+        println("$fullName Failed!")
+    }
 
-
-
-
-
-
+    if (activeStudent){
+        println("$fullName Active Student!")
+    }else{
+        println("$fullName Not Active Student!")
+    }
 
 }
