@@ -18,29 +18,34 @@ fun main(){
     var bookBorrowed:Boolean = false
     var bookAvailable:Boolean = false
 
+    bookAvailable = canBorrow == true and bookBorrowed == false
+
+    if (bookAvailable){
+        println("$bookTitle available to borrow!")
+    }else {
+        println("$bookTitle unavailable to borrow!")
+    }
+
     var formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
     var dateToday = LocalDateTime.now().format(formatter)
 
     //BORROWED INFO
     var borrowedDate =dateToday
     var borrowedName = ""
-
-    bookAvailable = canBorrow == true and bookBorrowed == false
-    println(bookAvailable)
+    var borrowedBook = bookTitle
 
 
-    var book1:String = "The Grudge"
-    var book2:String = "The Guns of august"
-    var book3:String = "Harry Potter"
-    var book4:String = "A Game of Thrones"
 
-    var bookType1:String = "Horror"
-    var bookType2:String = "History"
-    var bookType3:String = "Fantasy"
-    var bookType4:String = "Action"
 
-    var books = arrayOf("The Grudge", "The Guns of august","Harry Potter", "A Game of Thrones")
-    var bookType = arrayOf("Horror", "History","Fantasy", "Action")
+//    var book1:String = "The Grudge"
+//    var book2:String = "The Guns of august"
+//    var book3:String = "Harry Potter"
+//    var book4:String = "A Game of Thrones"
+//
+//    var bookType1:String = "Horror"
+//    var bookType2:String = "History"
+//    var bookType3:String = "Fantasy"
+//    var bookType4:String = "Action"
 
 
 
