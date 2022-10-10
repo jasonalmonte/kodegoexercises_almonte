@@ -1,9 +1,18 @@
 fun main(){
 
-//    var items = arrayOf("Noodles","Shampoo","Biscuit")
-//    var prices = arrayOf("15","50","25")
-//
-//    var names = arrayOf(items, prices)
+//    You are tasked to automate an inventory system for a grocery..
+//    Identify the items that can be bought in a grocery store.
+//    After listing the different items, identify the characteristics of the items.
+//    You are also tasked to group the items in categories to help manage the grocery.
+//    Use the proper data types.
+
+
+    var items = arrayOf("Cigarette","Shampoo","Biscuit","Noodles")
+    var prices = arrayOf("15","50","25")
+
+    var names = arrayOf(items, prices)
+
+
 
     var userName:String? = null
     var needAnyhelp:String? = null
