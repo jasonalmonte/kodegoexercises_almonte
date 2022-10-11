@@ -21,15 +21,17 @@ fun main(){
     var stocks = 0
     var itemPrice:Float = 0.0F
     var change:Float = 0.0F
-    var pay:Float = 0.0F
+    var cash:Float = 0.0F
 
 
-    if (pay < itemPrice){
+    if (cash < itemPrice){
         println("Insufficient Funds")
-    }else if (stocks == 0 || stocks <= quantity){
+    }else if (stocks <= quantity){
         println("Not enough stocks")
     }else {
         println("Proceed")
     }
+
+
 
 }
