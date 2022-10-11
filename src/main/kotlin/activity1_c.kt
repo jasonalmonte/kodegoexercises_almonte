@@ -27,6 +27,10 @@ fun main(){
         println("Successful!, New stock $stocks")
     }
 
+    var itemName = arrayOf("Marlboro","Champion")
+
+    println("Below are the items: ")
+    println(itemName[0])
 
 
 

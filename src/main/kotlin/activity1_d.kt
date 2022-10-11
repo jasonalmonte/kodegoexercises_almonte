@@ -6,6 +6,7 @@
 
 fun main(){
     var monetaryAmount = 0
+    var result:Double = 0.0
 
     println("Please input 5 monetary amount: ")
     monetaryAmount = readln().toInt()
@@ -16,5 +17,6 @@ fun main(){
 
     print("Divide the value by how many? ")
     monetaryAmount /= readln().toInt()
-    println("Answer: $monetaryAmount")
+    result = monetaryAmount.toDouble()
+    println("Answer: $result")
 }
