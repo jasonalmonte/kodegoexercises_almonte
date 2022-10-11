@@ -19,20 +19,17 @@ fun main(){
     var itemCategory:String = ""
     var quantity = 0
     var stocks = 0
+    var itemPrice:Float = 0.0F
+    var change:Float = 0.0F
+    var pay:Float = 0.0F
 
-    if (stocks == 0){
+
+    if (pay < itemPrice){
+        println("Insufficient Funds")
+    }else if (stocks == 0 || stocks <= quantity){
         println("Not enough stocks")
-    }else{
-        stocks -= quantity
-        println("Successful!, New stock $stocks")
+    }else {
+        println("Proceed")
     }
-
-    var itemName = arrayOf("Marlboro","Champion")
-
-    println("Below are the items: ")
-    println(itemName[0])
-
-
-
 
 }

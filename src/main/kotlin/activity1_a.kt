@@ -66,4 +66,13 @@ fun main(){
         println("$fullName Not Active Student!")
     }
 
+    var jason:Float = 0.0F
+    jason = readln().toFloat()
+    if ( jason in 94.0F .. 100.0F){
+        println("OK")
+
+    }else{
+        println("NO")
+    }
+
 }
