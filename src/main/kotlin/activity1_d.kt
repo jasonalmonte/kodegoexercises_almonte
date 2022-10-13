@@ -19,4 +19,17 @@ fun main(){
     monetaryAmount /= readln().toInt()
     result = monetaryAmount.toDouble()
     println("Answer: $result")
+
+
+    println("Please input 5 monetary amount: ")
+    repeat(5){
+        print("Input #$it: ")
+        monetaryAmount += readln().toInt()
+    }
+
+    print("Divide the value by how many? ")
+    monetaryAmount /= readln().toInt()
+    result = monetaryAmount.toDouble()
+    println("Answer: $result")
+
 }
