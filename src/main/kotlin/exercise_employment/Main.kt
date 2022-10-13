@@ -1,47 +1,52 @@
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+
 fun main() {
 
     //APPLICATION FOR EMPLOYMENT
 
-    var position:String = ""
-    var salary:String = ""
-    var availableDate:String = ""
+    var position:String? = null
+    var salary:Float? = null
+    var formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
+    var dateToday = LocalDateTime.now().format(formatter)
+    var availableDate = dateToday
 
     //PERSONAL INFORMATION
 
-    var lastname:String = ""
-    var firstname:String = ""
-    var middleName:String = ""
-    var address:String = ""
-    var city:String = ""
-    var state:String = ""
+    var lastname:String? = null
+    var firstname:String? = null
+    var middleName:String? = null
+    var address:String? = null
+    var city:String? = null
+    var state:String? = null
     var zipCode:Int
 
-    var homePhone:String = ""
-    var cellphone:String = ""
-    var emailAddress:String = ""
-    var sss:String = ""
-    var citizenship:String = ""
-    var convictedFelony:String = ""
-    var drugScreenTest:String = ""
+    var homePhone:Int? = null
+    var cellphone:Int? = null
+    var emailAddress:String? = null
+    var sss:String? = null
+    var citizenship:String? = null
+    var convictedFelony:String? = null
+    var drugScreenTest:String? = null
 
     //EDUCATION
 
-    var schoolNameA:String = ""
-    var schoolLocationA:String = ""
-    var yearAttendedA:String = ""
-    var degreeA:String = ""
-    var majorA:String = ""
+    var schoolNameA:String? = null
+    var schoolLocationA:String? = null
+    var yearAttendedA:String? = null
+    var degreeA:String? = null
+    var majorA:String? = null
 
-    var schoolNameB:String = ""
-    var schoolLocationB:String = ""
-    var yearAttendedB:String = ""
-    var degreeB:String = ""
-    var majorB:String = ""
+    var schoolNameB:String? = null
+    var schoolLocationB:String? = null
+    var yearAttendedB:String? = null
+    var degreeB:String? = null
+    var majorB:String? = null
 
-    var schoolNameC:String = ""
-    var schoolLocationC:String = ""
-    var yearAttendedC:String = ""
-    var degreeC:String = ""
-    var majorC:String = ""
+    var schoolNameC:String? = null
+    var schoolLocationC:String? = null
+    var yearAttendedC:String? = null
+    var degreeC:String? = null
+    var majorC:String? = null
 
 }
