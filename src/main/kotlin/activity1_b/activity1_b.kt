@@ -10,6 +10,7 @@ fun main(){
 //    Use the proper data types.
 
     //BOOK INFORMATION
+    var isbn:Int
     var bookTitle:String = ""
     var bookAuthor:String = ""
     var bookTypes:String = ""
@@ -39,5 +40,6 @@ fun main(){
     if (dateToday > borrowedReturn ){
         println("$bookTitle book need to return!")
     }
+
 
 }

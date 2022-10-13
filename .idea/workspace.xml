@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5ba1307-270b-4030-bc6d-5889b693ff9e" name="Changes" comment="Initial Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity1_a/activity1_a.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity1_a/activity1_a.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity1_b/activity1_b.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity1_b/activity1_b.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity1_c/activity1_c.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity1_c/activity1_c.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/exercise_employment/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/exercise_employment/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -254,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665660427671</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Initial Commit">
+      <created>1665660741399</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1665660741399</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

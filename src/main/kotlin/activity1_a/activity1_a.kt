@@ -47,8 +47,8 @@ fun main(){
     var attendanceGrades:Double = 0.0
 
     //PASSING GRADES
-    var progressPassing:Int = 80
-    var activeStudentIndicator:Int = 20
+    var progressPassing:Double = 80.0
+    var activeStudentIndicator:Double = 20.0
 
     var progressStatus:Boolean = false
     progressStatus = ((grades + exam + exercises + attendanceGrades)/4 > progressPassing)

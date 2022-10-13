@@ -7,9 +7,7 @@ fun main() {
 
     var position:String? = null
     var salary:Float? = null
-    var formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
-    var dateToday = LocalDateTime.now().format(formatter)
-    var availableDate = dateToday
+    var availableDate:LocalDateTime? = null
 
     //PERSONAL INFORMATION
 
@@ -33,19 +31,19 @@ fun main() {
 
     var schoolNameA:String? = null
     var schoolLocationA:String? = null
-    var yearAttendedA:String? = null
+    var yearAttendedA:Int? = null
     var degreeA:String? = null
     var majorA:String? = null
 
     var schoolNameB:String? = null
     var schoolLocationB:String? = null
-    var yearAttendedB:String? = null
+    var yearAttendedB:Int? = null
     var degreeB:String? = null
     var majorB:String? = null
 
     var schoolNameC:String? = null
     var schoolLocationC:String? = null
-    var yearAttendedC:String? = null
+    var yearAttendedC:Int? = null
     var degreeC:String? = null
     var majorC:String? = null
 

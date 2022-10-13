@@ -13,7 +13,7 @@ fun main(){
     var dateToday = LocalDateTime.now().format(formatter)
 
     //
-    var dateNow = dateToday
+    var dateNow:LocalDateTime? = null
     var itemCode:String = ""
     var itemDescription:String = ""
     var itemCategory:String = ""
