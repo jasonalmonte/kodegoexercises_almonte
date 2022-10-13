@@ -10,13 +10,13 @@ import java.time.format.DateTimeFormatter
 fun main(){
 
     //INFORMATION DIRECTORY
-    var firstname:String = ""
-    var middlename:String = ""
-    var lastname:String = ""
+    var firstname:String? = null
+    var middlename:String? = null
+    var lastname:String? = null
     var fullName:String = "$firstname $middlename $lastname"
-    var facebook:String = ""
-    var emailAddress:String = ""
-    var course:String = ""  //MD2P
+    var facebook:String? = null
+    var emailAddress:String? = null
+    var course:String? = null  //MD2P
     var batch:Int  //2022
     var activeStudent:Boolean = false
 
@@ -66,13 +66,5 @@ fun main(){
         println("$fullName Not Active Student!")
     }
 
-    var jason:Float = 0.0F
-    jason = readln().toFloat()
-    if ( jason in 94.0F .. 100.0F){
-        println("OK")
-
-    }else{
-        println("NO")
-    }
 
 }
