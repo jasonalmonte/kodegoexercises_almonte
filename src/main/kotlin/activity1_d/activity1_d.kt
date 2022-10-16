@@ -6,88 +6,92 @@ import mu.KotlinLogging
 private val logger = KotlinLogging.logger{}
 fun main(){
     var userInput:String = ""
-    var monetaryAmount = 0
+    var monetaryAmount:Double   = 0.0
     var result:Double = 0.0
     var number = 48 .. 57
     var negativeValue:Boolean = false
     var foundInteger :Boolean = false
 
-
+    //RUN 5 MONETARY INPUT
     for(input in 0 until 5){
 
         foundInteger = false
         negativeValue = false
 
-        logger.info { "[$input] Please input 5 monetary amount: " }
+        print("[$input] Please input 5 monetary amount: ")
         userInput = readln().toString()
 
-        //Check per char
+        //CHECK PER CHAR
         for(counter in 0 until  userInput.length){
             var char = userInput[counter].toFloat()
 
             if (char.toInt() == 45) {
                 negativeValue = true
-                logger.info { "Negative value, proceed line.." }
+               // logger.info { "Negative value, proceed line.." }
             }else if(char.toInt() in number){
-                    logger.info { "Its Int: ${userInput[counter]}" }
-                    foundInteger = true
+                //logger.info { "Its Int: ${userInput[counter]}" }
+                foundInteger = true
             }else {
-                    logger.info { "Not Int: ${userInput[counter]}" }
-                    foundInteger = false
-                    break
+                //logger.info { "Not Int: ${userInput[counter]}" }
+                foundInteger = false
+                break
             }
         }
 
+        //CONVERT OPERATIONAL SIGN
         if (foundInteger){
             if (negativeValue){
-                monetaryAmount = -userInput.toInt()
+                monetaryAmount += userInput.toInt() + -0
             }else{
-                monetaryAmount = userInput.toInt()
+                monetaryAmount += userInput.toInt()
             }
-            logger.info { "Userinput: $monetaryAmount" }
-            logger.info { "Divide the value by how many? " }
-//        monetaryAmount /= readln().toInt()
-//        result = monetaryAmount.toDouble()
-//        println("Answer: $result")
+            result = monetaryAmount.toDouble()
+            logger.info { "User input: ${userInput.toInt() + -0}" }
+            logger.info { "Result: ${result}" }
         }else{
-            logger.info { "Invalid input" }
+            logger.info { "Invalid input not integer, now exiting the program.." }
             break
         }
 
     }
 
+    ////////////////////////// DIVIDE TO SUN OF 5 MONETARY //////////////////////////
+    negativeValue = false
 
+    print("Divide the value by how many? ")
+    userInput = readln().toString()
 
+    //CHECK PER CHAR
+    for(counter in 0 until  userInput.length){
+        var char = userInput[counter].toFloat()
 
+        if(!foundInteger) {
+            foundInteger = false
+            break
+        }else if(char.toInt() == 45) {
+            negativeValue = true
+            //logger.info { "Negative value, proceed line.." }
+        }else if(char.toInt() in number){
+            //logger.info { "Its Int: ${userInput[counter]}" }
+            foundInteger = true
+        }else {
+            //logger.info { "Not Int: ${userInput[counter]}" }
+            foundInteger = false
+            break
+        }
     }
 
-    //CHECK ALL CHAR
-
-
-
-
-
-
-//
-//    monetaryAmount += readln().toInt()
-//    monetaryAmount += readln().toInt()
-//    monetaryAmount += readln().toInt()
-//    monetaryAmount += readln().toInt()
-//
-//    print("Divide the value by how many? ")
-//   // monetaryAmount /= readln().toInt()
-//    result = monetaryAmount.toDouble()
-//    println("Answer: $result")
-//
-//
-//    println("Please input 5 monetary amount: ")
-//    repeat(5){
-//        print("Input #$it: ")
-//        monetaryAmount += readln().toInt()
-//    }
-//
-//    print("Divide the value by how many? ")
-//  //  monetaryAmount /= readln().toInt()
-//    result = monetaryAmount.toDouble()
-//    println("Answer: $result")
-
+    //CONVERT OPERATIONAL SIGN
+    if (foundInteger){
+        if(negativeValue){
+            monetaryAmount /= userInput.toInt() + -0
+        }else{
+            monetaryAmount /= userInput.toInt()
+        }
+        result = monetaryAmount.toDouble()
+        logger.info { "User input: ${userInput.toInt() + -0}" }
+        logger.info { "Result: ${result}" }
+    }else{
+        logger.info { "Invalid input not integer, now exiting the program.." }
+    }
+}
