@@ -27,12 +27,9 @@ fun main(){
 
             if (char.toInt() == 45) {
                 negativeValue = true
-               // logger.info { "Negative value, proceed line.." }
             }else if(char.toInt() in number){
-                //logger.info { "Its Int: ${userInput[counter]}" }
                 foundInteger = true
             }else {
-                //logger.info { "Not Int: ${userInput[counter]}" }
                 foundInteger = false
                 break
             }
@@ -46,10 +43,9 @@ fun main(){
                 monetaryAmount += userInput.toInt()
             }
             result = monetaryAmount.toDouble()
-            logger.info { "User input: ${userInput.toInt() + -0}" }
             logger.info { "Result: ${result}" }
         }else{
-            logger.info { "Invalid input not integer, now exiting the program.." }
+            logger.info { "Invalid input in 5 monetary, now exiting the program.." }
             break
         }
 
@@ -92,6 +88,6 @@ fun main(){
         logger.info { "User input: ${userInput.toInt() + -0}" }
         logger.info { "Result: ${result}" }
     }else{
-        logger.info { "Invalid input not integer, now exiting the program.." }
+        logger.info { "Invalid input in divide by, now exiting the program.." }
     }
 }
