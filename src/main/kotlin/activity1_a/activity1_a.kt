@@ -1,12 +1,13 @@
+import mu.KotlinLogging
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
-
 //   Activity 01  - B
 //   You are tasked to create a directory of the students taking this course.
 //   The data will be used to send updates regarding the classes.
 //   There is also a need to know the progress of the students during the progress of this course.
 //   List down all data that can be used to implement this. Use the proper data types.
 
+private val logger = KotlinLogging.logger{}
 fun main(){
 
     //INFORMATION DIRECTORY
@@ -55,15 +56,15 @@ fun main(){
     activeStudent = ((grades + exam + exercises + attendanceGrades)/4 > activeStudentIndicator)
 
     if (progressStatus){
-        println("$fullName Passed!")
+        logger.info { "$fullName Passed!" }
     }else{
-        println("$fullName Failed!")
+        logger.info { "$fullName Failed!" }
     }
 
     if (activeStudent){
-        println("$fullName Active Student!")
+        logger.info { "$fullName Active Student!" }
     }else{
-        println("$fullName Not Active Student!")
+        logger.info { "$fullName Not Active Student!" }
     }
 
 

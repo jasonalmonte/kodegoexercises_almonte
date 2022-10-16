@@ -1,6 +1,8 @@
+import mu.KotlinLogging
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
+private val logger = KotlinLogging.logger{}
 fun main(){
 
 //    Activity 01  - B
@@ -22,9 +24,9 @@ fun main(){
     bookAvailable = canBorrow == true and bookBorrowed == false
 
     if (bookAvailable){
-        println("$bookTitle available to borrow!")
+        logger.info { "$bookTitle available to borrow!" }
     }else {
-        println("$bookTitle unavailable to borrow!")
+        logger.info { "$bookTitle unavailable to borrow!" }
     }
 
     var formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
@@ -38,7 +40,7 @@ fun main(){
     var borrowedReturn = LocalDateTime.now().plusDays(howManyDays).format(formatter)
 
     if (dateToday > borrowedReturn ){
-        println("$bookTitle book need to return!")
+        logger.info { "$bookTitle book need to return!" }
     }
 
 

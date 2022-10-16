@@ -1,6 +1,7 @@
+import mu.KotlinLogging
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
-
+private val logger = KotlinLogging.logger{}
 fun main(){
 
 //    You are tasked to automate an inventory system for a grocery.
@@ -25,13 +26,10 @@ fun main(){
 
 
     if (cash < itemPrice){
-        println("Insufficient Funds")
+        logger.info { "Insufficient Funds" }
     }else if (stocks <= quantity){
-        println("Not enough stocks")
+        logger.info { "Not enough stocks" }
     }else {
-        println("Proceed")
+        logger.info { "Proceed" }
     }
-
-
-
 }

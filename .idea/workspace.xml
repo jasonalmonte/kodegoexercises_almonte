@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c5ba1307-270b-4030-bc6d-5889b693ff9e" name="Changes" comment="Initial Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity1_a/activity1_a.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity1_a/activity1_a.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity1_b/activity1_b.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity1_b/activity1_b.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity1_c/activity1_c.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity1_c/activity1_c.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity1_d/activity1_d.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity1_d/activity1_d.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,16 +41,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/JALMONTE/IdeaProjects/MD2P",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
-  <component name="RunManager" selected="Kotlin.Activity1_dKt">
+}]]></component>
+  <component name="RunManager" selected="Kotlin.Activity1_bKt">
     <configuration name="Activity1_aKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Activity1_aKt" />
       <module name="kodegoexercises_almonte.main" />
@@ -75,8 +80,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainKt" />
+    <configuration name="LoggingKotlinKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LoggingKotlinKt" />
       <module name="kodegoexercises_almonte.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -84,11 +89,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.Activity1_dKt" />
-        <item itemvalue="Kotlin.Activity1_aKt" />
         <item itemvalue="Kotlin.Activity1_bKt" />
+        <item itemvalue="Kotlin.Activity1_aKt" />
+        <item itemvalue="Kotlin.Activity1_dKt" />
+        <item itemvalue="Kotlin.LoggingKotlinKt" />
         <item itemvalue="Kotlin.Activity1_cKt" />
-        <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
   </component>
@@ -276,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665661497774</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Initial Commit">
+      <created>1665749088380</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1665749088380</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
