@@ -1,6 +1,11 @@
+import ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy
 import mu.KotlinLogging
+import java.security.KeyStore.TrustedCertificateEntry
+import kotlin.math.absoluteValue
 
 private val logger = KotlinLogging.logger{}
+var whileTrue: Boolean = true
+
 
 open class Product{
     var name: String =""
@@ -12,7 +17,6 @@ open class Product{
         this.price = price
     }
 }
-
 
 class Fruits (name: String, price: Double): Product(name,price){
     // var price: Double = 0.0
@@ -64,6 +68,7 @@ class Cart(customer: Customer) {
     var uniqueID: String =""
     var items: HashMap<Product,Float> = HashMap()
     var status: OrderStatus = OrderStatus.UNKNOWN
+    var count: Double = 0.0
 
     fun updateOrder(){
         this.status = status
@@ -71,15 +76,29 @@ class Cart(customer: Customer) {
 
     fun addItems(product: Product, quantity: Float){
         //items.put(product, quantity)
-        items[product] = quantity
+        //items[product] = quantity
+
+        count = quantity.toDouble()
+
+        for(entry in items.entries){
+            if (entry.key == product){
+                count =  entry.value.toDouble() + quantity
+            }
+        }
+
+        items[product] = count.toFloat()
+        count = 0.0 //Reset Quantity
+    }
+    fun checkQuantity(){
+        for(entry in items.entries){
+            logger.info { "Product: ${entry.key.name} -> Quantity: ${entry.value}"}
+        }
     }
 }
 
 data class Customer(var address: String, var mobileNumber: String,
                     var firstname: String, var lastname: String){
-
 }
-
 
 fun main(){
 
@@ -90,23 +109,22 @@ fun main(){
     fruits.add(Fruits("Lemon",0.0))
     fruits.add(Fruits("Mango",0.0))
 
-    logger.info {  }
+    var shakes = ArrayList<Shake>()
+    shakes.add(Shake("Apple",0.0))
+    shakes.add(Shake("Banana",0.0))
+    shakes.add(Shake("Orange",0.0))
+    shakes.add(Shake("Lemon",0.0))
+    shakes.add(Shake("Mango",0.0))
 
     var customer2 = Customer("","","","")
     var cart2 = Cart(customer2)
-
-
-    cart2.addItems(fruits[0],0.0F)
-    fruits.add(Fruits("sada",0.0))
-
-    //var persona = Product()
-    var humana = Human("",0.0)
-
-    humana.go()
-    var customer1 = Customer("","","","")
+    cart2.addItems(fruits[2],1.0F)
+    cart2.addItems(fruits[3],1.0F)
+    cart2.addItems(fruits[2],1.0F)
+    cart2.addItems(fruits[3],5.0F)
+    cart2.checkQuantity()
 
     //  jason.add(Person("jason",28.0))
-
 }
 
 
