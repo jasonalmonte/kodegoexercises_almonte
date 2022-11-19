@@ -1,11 +1,5 @@
-import ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy
 import mu.KotlinLogging
-import java.security.KeyStore.TrustedCertificateEntry
-import kotlin.math.absoluteValue
-
 private val logger = KotlinLogging.logger{}
-var whileTrue: Boolean = true
-
 
 open class Product{
     var name: String =""
@@ -20,7 +14,7 @@ open class Product{
 
 class Fruits (name: String, price: Double): Product(name,price){
     // var price: Double = 0.0
-    var quantity: Float = 0F
+   var quantity: Float = 0F
     var quantityUnits: String = "per piece"
 }
 
@@ -101,32 +95,30 @@ data class Customer(var address: String, var mobileNumber: String,
 }
 
 fun main(){
+    var customerVar = Customer("Antarctica","091938475623","Jason","Garcia")
+    var cartVar = Cart(customerVar)
 
     var fruits = ArrayList<Fruits>()
-    fruits.add(Fruits("Apple",0.0))
-    fruits.add(Fruits("Banana",0.0))
-    fruits.add(Fruits("Orange",0.0))
-    fruits.add(Fruits("Lemon",0.0))
-    fruits.add(Fruits("Mango",0.0))
+    fruits.add(Fruits("Apple",15.0))
+    fruits.add(Fruits("Banana",10.0))
+    fruits.add(Fruits("Orange",20.0))
+    fruits.add(Fruits("Lemon",10.0))
+    fruits.add(Fruits("Mango",25.0))
+
+    cartVar.addItems(fruits[3],1.0F)
+    cartVar.addItems(fruits[3],1.0F)
+    cartVar.addItems(fruits[2],1.0F)
+    cartVar.addItems(fruits[3],5.0F)
+    cartVar.checkQuantity()
 
     var shakes = ArrayList<Shake>()
-    shakes.add(Shake("Apple",0.0))
-    shakes.add(Shake("Banana",0.0))
-    shakes.add(Shake("Orange",0.0))
-    shakes.add(Shake("Lemon",0.0))
-    shakes.add(Shake("Mango",0.0))
-
-    var customer2 = Customer("","","","")
-    var cart2 = Cart(customer2)
-    cart2.addItems(fruits[2],1.0F)
-    cart2.addItems(fruits[3],1.0F)
-    cart2.addItems(fruits[2],1.0F)
-    cart2.addItems(fruits[3],5.0F)
-    cart2.checkQuantity()
-
+    shakes.add(Shake("Oreo",70.0))
+    shakes.add(Shake("Chip Cream",70.0))
+    shakes.add(Shake("Strawberry",70.0))
+    shakes.add(Shake("Dark Chocolate",70.0))
+    shakes.add(Shake("Chocolate",70.0))
     //  jason.add(Person("jason",28.0))
 }
-
 
 class Person{
     var names: String = ""

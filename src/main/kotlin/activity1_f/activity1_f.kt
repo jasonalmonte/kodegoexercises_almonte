@@ -1,29 +1,24 @@
 import mu.KotlinLogging
-
 private val logger = KotlinLogging.logger{}
 
 fun main(){
 
-  //  var studentnames:ArrayList<Any> = arrayOf("asd","asdsa141")
-    //studentnames.add("14214")
-    var position: Array<String> = arrayOf("asd","asdsa141")
-position[1] = "asd"
-    logger.info { position.size}
-
+    var positions: ArrayList<String> = ArrayList()
 
     var inputA: String?
     var inputB: String?
 
-    var uniqueA: String? = ""
-    var uniqueB: String? = ""
+    var allUniqueChar: String? = ""
 
-    var findUnique: Boolean = true
+    var findUnique: Boolean = false
 
     logger.info { "Input A String:" }
     inputA = readln()
-    logger.info { "Input A String:" }
+    logger.info { "Input B String:" }
     inputB = readln()
 
+
+    //Check Unique String A
     for( indexA in 0 until inputA.length){
         var charA = inputA[indexA]
 
@@ -31,19 +26,35 @@ position[1] = "asd"
             var charB = inputB[indexB]
 
             if (charA == charB){
-                findUnique = false
+                findUnique = true
+            }
+        }
+        if (!findUnique) {
+            positions.add(charA.toString())
+        }
+        findUnique = false
+    }
+
+    for( indexB in 0 until inputB.length){
+        var charB = inputB[indexB]
+
+        for( indexA in 0 until inputA.length){
+            var charA = inputA[indexA]
+
+            if (charB == charA){
+                findUnique = true
             }
         }
 
-
-        if (findUnique) {
-            uniqueA = uniqueA.plus(",").plus(charA).plus(",")
+        if (!findUnique) {
+            positions.add(charB.toString())
         }
-
-        findUnique = true
+        findUnique = false
     }
 
-    logger.info { "S: $uniqueA" }
 
-
+    for(uniques in positions.indices){
+        allUniqueChar += positions[uniques]
+    }
+    logger.info { "Unique : $allUniqueChar" }
 }
