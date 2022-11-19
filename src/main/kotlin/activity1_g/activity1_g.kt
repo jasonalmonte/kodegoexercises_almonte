@@ -5,14 +5,12 @@ private val logger = KotlinLogging.logger{}
 
 fun main(){
     var string1: String = ""
-    var storeString1: String = ""
     var palindrome: Boolean = true
 
     logger.info{ "Input string:"}
     string1 = readln().uppercase()
 
     for(char in 0 until string1.length){
-        storeString1 += string1[char]
 
         if(string1[char] != string1[(string1.length - char) -1]) {
             palindrome = false
