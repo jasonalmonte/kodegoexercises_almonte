@@ -1,19 +1,30 @@
 package activity1_g
 
+import mu.KotlinLogging
+private val logger = KotlinLogging.logger{}
+
 fun main(){
     var string1: String = ""
     var storeString1: String = ""
-    var palindrome: Boolean = false
+    var palindrome: Boolean = true
 
-    println("Input string:")
-    string1 = readln()
+    logger.info{ "Input string:"}
+    string1 = readln().uppercase()
+
     for(char in 0 until string1.length){
         storeString1 += string1[char]
 
         if(string1[char] != string1[(string1.length - char) -1]) {
-            palindrome = true
+            palindrome = false
         }
-        println("A: ${string1[char]} B: ${string1[(string1.length - char) -1]}")
+
     }
 
+    if(palindrome){
+        logger.info{ " $string1 - Palindrome"}
+    }else{
+        logger.info{ " $string1 - Not Palindrome"}
+    }
+
+    palindrome = true
 }
