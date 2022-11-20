@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5ba1307-270b-4030-bc6d-5889b693ff9e" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity1_j/activity1_j.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity3_a/Activity3_a.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity1_i/activity1_i.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity1_i/activity1_i.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,15 +52,11 @@
       <recent name="C:\Users\JALMONTE\IdeaProjects\kodegoexercises_almonte\src\main\kotlin\activity1_j" />
       <recent name="C:\Users\JALMONTE\IdeaProjects\kodegoexercises_almonte\src\main\kotlin\activity1_i" />
     </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="activity3_a" />
+    </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Activity1_jKt">
-    <configuration name="Activity1_fKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Activity1_fKt" />
-      <module name="kodegoexercises_almonte.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.Activity3_aKt">
     <configuration name="Activity1_gKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="activity1_g.Activity1_gKt" />
       <module name="kodegoexercises_almonte.main" />
@@ -90,13 +85,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Activity3_aKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="activity3_a.Activity3_aKt" />
+      <module name="kodegoexercises_almonte.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Activity3_aKt" />
         <item itemvalue="Kotlin.Activity1_jKt" />
         <item itemvalue="Kotlin.Activity1_iKt" />
         <item itemvalue="Kotlin.Activity1_hKt" />
         <item itemvalue="Kotlin.Activity1_gKt" />
-        <item itemvalue="Kotlin.Activity1_fKt" />
       </list>
     </recent_temporary>
   </component>
@@ -403,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668942858178</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Initial Commit">
+      <created>1668944454810</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1668944454810</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
