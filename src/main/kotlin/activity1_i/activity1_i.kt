@@ -4,17 +4,9 @@ import java.time.format.DateTimeFormatter
 
 private val logger = KotlinLogging.logger{}
 fun main(){
-
-//    Activity 01  - B
-//    You are tasked to automate a school’s library.
-//    Identify the items that can be borrowed in a Library.
-//    After listing the different items, identify the characteristics of the items.
-//    Use the proper data types.
-
     //BOOK INFORMATION
     var isbn = arrayOf("10001","10002","10003","10004","10005")
     var bookTitle: Array<String> = arrayOf("BookA","BookB","BookC","BookD","BookE")
-
 
     var bookAuthor:String = ""
     var bookTypes:String = ""
@@ -24,16 +16,6 @@ fun main(){
     var bookAvailable:ArrayList<Boolean> = ArrayList()
 
     var user: String = "Librarian"
-
-    //bookAvailable = canBorrow == true and bookBorrowed == false
-
-
-
-//    if (bookAvailable){
-//        logger.info { "$bookTitle available to borrow!" }
-//    }else {
-//        logger.info { "$bookTitle unavailable to borrow!" }
-//    }
 
     var formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
     var dateToday = LocalDateTime.now().format(formatter)
