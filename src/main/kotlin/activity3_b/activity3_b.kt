@@ -1,10 +1,5 @@
 package activity3_b
 
-import activity3_a.searchStudentName
-import activity3_a.searchStudentWildSearch
-import activity3_a.showStudents
-
-
 fun main(){
     var names : ArrayList<String> = arrayListOf("Almanac", "Dictionary", "Peter Pan", "Tom and Jerry", "The Stocks",
         "Titanic", "Jaw", "English Book", "Magazine", "The Bible",
@@ -19,8 +14,8 @@ fun main(){
     addBook(inputBook, names)
     removeBook(inputBook,names)
     countBooks(names)
-    println("[6] Wild Search : ${searchStudentWildSearch(inputBook,names)}")
-    println("[7] Book Name : ${searchStudentName(inputBook,names)}")
+    println("[6] Wild Search : ${searchBookWildSearch(inputBook,names)}")
+    println("[7] Book Name : ${searchBookName(inputBook,names)}")
     println("[8] Show All Books")
     showBooks(names)
 }
