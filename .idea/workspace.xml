@@ -56,14 +56,7 @@
       <recent name="activity3_a" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Activity3_bKt">
-    <configuration name="Activity1_hKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="activity1_h.Activity1_hKt" />
-      <module name="kodegoexercises_almonte.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.Activity_3cKt">
     <configuration name="Activity1_iKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Activity1_iKt" />
       <module name="kodegoexercises_almonte.main" />
@@ -92,13 +85,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Activity_3cKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="activity3_c.Activity_3cKt" />
+      <module name="kodegoexercises_almonte.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Activity_3cKt" />
         <item itemvalue="Kotlin.Activity3_bKt" />
         <item itemvalue="Kotlin.Activity3_aKt" />
         <item itemvalue="Kotlin.Activity1_jKt" />
         <item itemvalue="Kotlin.Activity1_iKt" />
-        <item itemvalue="Kotlin.Activity1_hKt" />
       </list>
     </recent_temporary>
   </component>
@@ -447,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669046193788</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Initial Commit">
+      <created>1669046654274</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1669046654274</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
