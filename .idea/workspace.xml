@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c5ba1307-270b-4030-bc6d-5889b693ff9e" name="Changes" comment="Initial Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity3_c/activity_3c.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity3_c/activity_3c.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity4_a/activity4_a.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity4_a/activity4_a.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,14 +56,7 @@
       <recent name="activity3_a" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Activity_3cKt">
-    <configuration name="Activity1_iKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Activity1_iKt" />
-      <module name="kodegoexercises_almonte.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.Activity4_aKt">
     <configuration name="Activity1_jKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Activity1_jKt" />
       <module name="kodegoexercises_almonte.main" />
@@ -85,6 +78,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Activity4_aKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="activity4_a.Activity4_aKt" />
+      <module name="kodegoexercises_almonte.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Activity_3cKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="activity3_c.Activity_3cKt" />
       <module name="kodegoexercises_almonte.main" />
@@ -94,11 +94,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Activity4_aKt" />
         <item itemvalue="Kotlin.Activity_3cKt" />
         <item itemvalue="Kotlin.Activity3_bKt" />
         <item itemvalue="Kotlin.Activity3_aKt" />
         <item itemvalue="Kotlin.Activity1_jKt" />
-        <item itemvalue="Kotlin.Activity1_iKt" />
       </list>
     </recent_temporary>
   </component>
@@ -110,20 +110,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665156753316</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Initial Commit">
-      <created>1665157836555</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1665157836555</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Initial Commit">
-      <created>1665158009370</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1665158009370</updated>
     </task>
     <task id="LOCAL-00003" summary="Initial Commit">
       <created>1665158463868</created>
@@ -454,7 +440,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669046654274</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Initial Commit">
+      <created>1669050479855</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1669050479856</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Initial Commit">
+      <created>1669050618441</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1669050618442</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
