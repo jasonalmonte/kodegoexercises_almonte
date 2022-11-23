@@ -120,24 +120,3 @@ fun main(){
     //  jason.add(Person("jason",28.0))
 }
 
-class Person{
-    var names: String = ""
-    var ages: Double = 5.0
-
-
-    fun go(){
-        logger.info { "I'm a person."}
-    }
-
-}
-class Human (name : String, age: Double) {
-
-    fun go(){
-        logger.info { "I'm human."}
-    }
-}
-open class Body{
-    open fun go(){
-        logger.info { "Please override.."}
-    }
-}
