@@ -11,17 +11,23 @@ class Books{
     var publisher: String = ""
     var listOfChapter: ArrayList<String> = ArrayList()
     var pages = 0 ..100
-}
 
-class Magazine{
+}
+open class Article{
+    var title: String = "article"
+    var content: String = ""
+    var author: String = ""
+
+}
+class Magazine: Article(){
     var editor: String = ""
-    var title: String = ""
+  //var title: String = ""
     var monthPublished: Int = 0
     var yearPublished: Int = 0
 }
 
 
-class Newspaper{
+class Newspaper: Article(){
     var name = ""
     var dayPublished: Int = 0
     var yearPublished: Int = 0
@@ -37,10 +43,7 @@ class Authors{
 }
 
 fun main(){
-
-   var comics: Comics = Illustrator()
-    //comics as Illustrator
-
+//var comics: Comics = Illustrator()
 
 }
 open class Comics{
@@ -57,5 +60,26 @@ class Illustrator: Comics() {
     var dateBirth: Date = Date()
 }
 
+fun search(){
+    var search: ArrayList<String> = ArrayList()
+}
+
+fun listNames(){
+    var listNames: ArrayList<String> = ArrayList()
+}
+
+class AudioVideo{
+    var length: Int = 0
+    var dateRecorded: Date = Date()
+    var title: String = ""
+    var publisher: String = ""
+
+}
+
+class Publisher(){
+    var publisherName: String = ""
+    var address: String = ""
+    var dateEstablished: Date = Date()
+}
 
 
