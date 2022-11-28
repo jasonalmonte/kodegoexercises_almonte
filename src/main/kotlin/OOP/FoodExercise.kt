@@ -99,6 +99,7 @@ fun main(){
     var cartVar = Cart(customerVar)
 
     var fruits = ArrayList<Fruits>()
+
     fruits.add(Fruits("Apple",15.0))
     fruits.add(Fruits("Banana",10.0))
     fruits.add(Fruits("Orange",20.0))
