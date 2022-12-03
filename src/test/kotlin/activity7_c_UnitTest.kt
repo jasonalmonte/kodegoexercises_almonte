@@ -1,6 +1,7 @@
-import activity5_c.Product
+import activity7_c_UnitTest.Carts
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
+import activity7_c_UnitTest.Errors
 
 internal class CartTester{
 
@@ -8,17 +9,17 @@ internal class CartTester{
 
     @Test
     fun addItemCheck(){
-        assertThrows<ProductNotFind>{
+        assertThrows<Errors.ProductNotFind>{
             carts.addItems("Mango")
         }
     }
 
     @Test
     fun checkOutCheck(){
-        assertThrows<InsufficientStock>{
+        assertThrows<Errors.InsufficientStock>{
             carts.checkOut("Apple",100,100,15.0F,100.0F)
         }
-        assertThrows<InsufficientCash>{
+        assertThrows<Errors.InsufficientCash>{
             carts.checkOut("Apple",0,100,15.0F, 100.0F)
         }
     }

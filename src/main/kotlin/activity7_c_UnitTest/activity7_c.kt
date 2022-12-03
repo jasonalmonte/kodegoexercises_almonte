@@ -1,8 +1,11 @@
+package activity7_c_UnitTest
 import activity5_c.Product
+sealed class Errors{
+    class InsufficientStock(message: String = "Not Enough stock") : Exception(message)
+    class InsufficientCash(message: String = "Insufficient") : Exception(message)
+    class ProductNotFind(message: String = "Not") : Exception(message)
+}
 
-class InsufficientStock(message: String = "Not Enough stock") : Exception(message)
-class InsufficientCash(message: String = "Insufficient") : Exception(message)
-class ProductNotFind(message: String = "Not") : Exception(message)
 
 class Carts{
     var items: HashMap<Product,Float> = HashMap()
@@ -20,17 +23,17 @@ class Carts{
 
         for(index in items.entries){
             if (product == index.key.itemName){
-                throw ProductNotFind()
+                throw Errors.ProductNotFind()
             }
         }
     }
 
     fun checkOut(product: String, stock:Int, qtyOrder: Int, price: Float, cash: Float){
         if(stock >= qtyOrder){
-            throw InsufficientStock()
+            throw Errors.InsufficientStock()
         }
         if(price <= cash){
-            throw InsufficientCash()
+            throw Errors.InsufficientCash()
         }
     }
 }

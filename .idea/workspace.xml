@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5ba1307-270b-4030-bc6d-5889b693ff9e" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity7_c_unitTest/activity7_c.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/activity7_c_unitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity6_c_Exceptions/activity6_c.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity6_a_Exceptions/activity6_a.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity6_a_Exceptions/activity6_a.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity7_c_unitTest/activity7_c.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity7_c_UnitTest/activity7_c.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/activity7_c_unitTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/activity7_c_UnitTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +20,16 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -59,7 +71,7 @@
       <recent name="activity3_a" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CartTester">
+  <component name="RunManager" selected="Kotlin.Activity6_cKt (1)">
     <configuration name="CartTester" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -106,54 +118,22 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CartTester.checkOutCheck" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;CartTester.checkOutCheck&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="Activity6_aKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="activity6_a_Exceptions.Activity6_aKt" />
+      <module name="kodegoexercises_almonte.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="SampleTest.checkCellNumberLength" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;SampleTest.checkCellNumberLength&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="Activity6_cKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Activity6_cKt" />
+      <module name="kodegoexercises_almonte.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="Activity5_dKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="activity5_d.Activity5_dKt" />
+    <configuration name="Activity6_cKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="activity6_c_Exceptions.Activity6_cKt" />
       <module name="kodegoexercises_almonte.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -161,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Activity6_cKt (1)" />
         <item itemvalue="Gradle.CartTester" />
+        <item itemvalue="Kotlin.Activity6_cKt" />
+        <item itemvalue="Kotlin.Activity6_aKt" />
         <item itemvalue="Gradle.CartTester.addItemCheck" />
-        <item itemvalue="Gradle.CartTester.checkOutCheck" />
-        <item itemvalue="Kotlin.Activity5_dKt" />
-        <item itemvalue="Gradle.SampleTest.checkCellNumberLength" />
       </list>
     </recent_temporary>
   </component>
@@ -177,13 +157,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665156753316</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Initial Commit">
-      <created>1665489204777</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1665489204777</updated>
     </task>
     <task id="LOCAL-00019" summary="Initial Commit">
       <created>1665490848251</created>
@@ -521,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670051161042</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Initial Commit">
+      <created>1670058775899</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1670058775899</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
