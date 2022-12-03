@@ -35,10 +35,10 @@ class Rules (name: String, color :PlayerColor): Players(name, color), OnBoard{
     override fun rolledDice(): Int {
         return (1..6).random()
     }
-    fun addPlayers(player: Players){
+    override fun addPlayers(player: Players){
         playerList.add(player)
     }
-    fun moveTo(player: Players, dice: Int){
+    override fun moveTo(player: Players, dice: Int){
         var position: Int = 0
         var actual: Int = 0
         if(!haveWinner){
@@ -81,7 +81,8 @@ class Rules (name: String, color :PlayerColor): Players(name, color), OnBoard{
 }
 interface OnBoard{
     fun rolledDice():Int{return 0}
-    fun moveTo(){}
+    fun moveTo(player: Players, dice: Int){}
+    fun addPlayers(player: Players){}
     fun trapSnake(){}
     fun getLadder(){}
 
