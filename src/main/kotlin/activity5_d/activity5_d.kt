@@ -18,7 +18,7 @@ enum class PlayerColor{
     UNKNOWN
 }
 
-class BoardRules (name: String, color :PlayerColor): Players(name, color), Movement{
+class Rules (name: String, color :PlayerColor): Players(name, color), OnBoard{
 
     private var playerList: ArrayList<Players> = ArrayList()
     private var location: HashMap<Players,Int> = HashMap()
@@ -41,7 +41,6 @@ class BoardRules (name: String, color :PlayerColor): Players(name, color), Movem
     fun moveTo(player: Players, dice: Int){
         var position: Int = 0
         var actual: Int = 0
-
         if(!haveWinner){
             println("[${player.name}, ${player.color}] Turns")
 
@@ -80,7 +79,7 @@ class BoardRules (name: String, color :PlayerColor): Players(name, color), Movem
             return newPosition
     }
 }
-interface Movement{
+interface OnBoard{
     fun rolledDice():Int{return 0}
     fun moveTo(){}
     fun trapSnake(){}
@@ -91,18 +90,17 @@ interface Movement{
 fun main(){
 
     //var rolled = Rolled()
-    var boardRules = BoardRules("", PlayerColor.UNKNOWN)
+    var rules = Rules("", PlayerColor.UNKNOWN)
 
-    boardRules.addPlayers(Players("Player1",PlayerColor.RED))
-    boardRules.addPlayers(Players("Player2",PlayerColor.BLUE))
-    boardRules.addPlayers(Players("Player3",PlayerColor.BLACK))
-    boardRules.addPlayers(Players("Player4",PlayerColor.YELLOW))
+    rules.addPlayers(Players("Player1",PlayerColor.RED))
+    rules.addPlayers(Players("Player2",PlayerColor.BLUE))
+    rules.addPlayers(Players("Player3",PlayerColor.BLACK))
+    rules.addPlayers(Players("Player4",PlayerColor.YELLOW))
 
-    do{
-        boardRules.moveTo(Players("Player1",PlayerColor.RED),boardRules.rolledDice())
-        boardRules.moveTo(Players("Player2",PlayerColor.BLUE),boardRules.rolledDice())
-        boardRules.moveTo(Players("Player3",PlayerColor.BLACK),boardRules.rolledDice())
-        boardRules.moveTo(Players("Player4",PlayerColor.YELLOW),boardRules.rolledDice())
-    }while(!boardRules.haveWinner)
+    do{ rules.moveTo(Players("Player1",PlayerColor.BLUE),rules.rolledDice())
+        rules.moveTo(Players("Player2",PlayerColor.BLUE),rules.rolledDice())
+        rules.moveTo(Players("Player3",PlayerColor.BLACK),rules.rolledDice())
+        rules.moveTo(Players("Player4",PlayerColor.YELLOW),rules.rolledDice())
+    }while(!rules.haveWinner)
 
 }
