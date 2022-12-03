@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5ba1307-270b-4030-bc6d-5889b693ff9e" name="Changes" comment="Initial Commit">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/OOP/CustomExceptions.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/OOP/Errors.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/OOP/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity6_a_Exceptions/activity6_a.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/FormCheckerTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity5_d/activity5_d.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity5_d/activity5_d.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,18 +42,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/JALMONTE/IdeaProjects/kodegoexercises_almonte/src/main/kotlin/activity1_j&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/JALMONTE/IdeaProjects/kodegoexercises_almonte/src/main/kotlin/OOP",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\JALMONTE\IdeaProjects\kodegoexercises_almonte\src\main\kotlin\OOP" />
+      <recent name="C:\Users\JALMONTE\IdeaProjects\kodegoexercises_almonte\src\test\kotlin" />
       <recent name="C:\Users\JALMONTE\IdeaProjects\kodegoexercises_almonte\src\main\kotlin\activity1_j" />
       <recent name="C:\Users\JALMONTE\IdeaProjects\kodegoexercises_almonte\src\main\kotlin\activity1_i" />
     </key>
@@ -57,12 +64,28 @@
     </key>
   </component>
   <component name="RunManager" selected="Kotlin.Activity5_dKt">
-    <configuration name="Activity4_bKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="activity4_b.Activity4_bKt" />
-      <module name="kodegoexercises_almonte.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="SampleTest.checkCellNumberLength" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;SampleTest.checkCellNumberLength&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="Activity5_aKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="activity5_a.Activity5_aKt" />
@@ -95,10 +118,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.Activity5_dKt" />
+        <item itemvalue="Gradle.SampleTest.checkCellNumberLength" />
         <item itemvalue="Kotlin.FoodExerciseKt" />
         <item itemvalue="Kotlin.Activity5_cKt" />
         <item itemvalue="Kotlin.Activity5_aKt" />
-        <item itemvalue="Kotlin.Activity4_bKt" />
       </list>
     </recent_temporary>
   </component>
@@ -110,13 +133,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665156753316</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Initial Commit">
-      <created>1665428208683</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1665428208683</updated>
     </task>
     <task id="LOCAL-00017" summary="Initial Commit">
       <created>1665428863898</created>
@@ -454,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670045516309</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Initial Commit">
+      <created>1670046121540</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1670046121541</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
