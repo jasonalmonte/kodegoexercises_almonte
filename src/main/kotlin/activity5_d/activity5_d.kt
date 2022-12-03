@@ -8,7 +8,6 @@ open class Players{
         this.name = name
         this.color = color
     }
-
 }
 
 enum class PlayerColor{
@@ -16,108 +15,94 @@ enum class PlayerColor{
     BLUE,
     RED,
     YELLOW,
+    UNKNOWN
 }
 
+class BoardRules (name: String, color :PlayerColor): Players(name, color), Movement{
 
-class Rules (name: String, color :PlayerColor): Players(name, color){
+    private var playerList: ArrayList<Players> = ArrayList()
+    private var location: HashMap<Players,Int> = HashMap()
+    var haveWinner: Boolean = false
 
-    var playerList: ArrayList<Players> = ArrayList()
-    var location: HashMap<Players,Int> = HashMap()
-
-    private var ladderMap: Map<Int, Double> = mutableMapOf((10 to -5.0), (25 to -5.0), (37 to -20.0),(53 to -10.0),
-        (67 to -25.0), (78 to -16.0), (81 to -25.0),(99 to -71.0))
+    private var ladderMap: Map<Int, Double> = mutableMapOf((1 to 5.0), (24 to 5.0), (30 to 20.0),(55 to 10.0),
+        (66 to 10.0), (75 to 2.0))
     private var snakeMap: Map<Int, Double> = mutableMapOf((10 to -5.0), (25 to -5.0), (37 to -20.0),(53 to -10.0),
-        (67 to -25.0), (78 to -16.0), (81 to -25.0),(99 to -71.0))
+        (67 to -25.0), (78 to -16.0), (81 to -27.0),(99 to -71.0))
 
-    var ladder = ladderMap as HashMap<Int,Double>
-    var snake = snakeMap as HashMap<Int,Double>
+    private var ladder = ladderMap as HashMap<Int,Double>
+    private var snake = snakeMap as HashMap<Int,Double>
 
-
-    fun addPlayers(){
-        playerList.add(Players("Player1", PlayerColor.RED))
-    }
-    fun haveTrap(){
-        for(entries in snake.entries){
-            if(81 == entries.key){
-                println(entries.value)
-            }
-        }
-    }
-    fun move(player: Players, position: Int, dice: Int){
-        for(index in location.entries){
-            if(player.name == index.key.name){
-
-                println(index.key.name)
-            }
-        }
-        location[player] = position
-        snakeAndLadder()
-    }
-    fun snakeAndLadder(){
-        for(entries in snake.entries){
-            if(81 == entries.key){
-                println(entries.value)
-                //move + loc next turn
-            }
-        }
-        for(entries in ladder.entries){
-            if(81 == entries.key){
-                println(entries.value)
-                //move + loc next turn
-            }
-        }
-    }
-
-
-
-
-}
-class OnBoard{
-    fun diceRoll(): Int{
+    override fun rolledDice(): Int {
         return (1..6).random()
     }
+    fun addPlayers(player: Players){
+        playerList.add(player)
+    }
+    fun moveTo(player: Players, dice: Int){
+        var position: Int = 0
+        var actual: Int = 0
 
+        if(!haveWinner){
+            println("[${player.name}, ${player.color}] Turns")
+
+            for(index in location.entries){
+                if(index.key.name == player.name){
+                    position = index.value
+                    location.keys.removeIf{ key -> key.name ==  player.name}
+                    break
+                }
+            }
+            actual = position + +dice
+            println(" - Rolled dice $dice, Move from $position to [$actual]")
+            actual = snakeAndLadder(actual)
+            location[player] = actual
+
+            if(position +dice >= 100){
+                println("------------------------------------------------------")
+                println("Congratulation! ${player.name} has won this game.")
+                haveWinner = true
+            }
+        }
+    }
+    private fun snakeAndLadder(newPosition: Int): Int{
+        for(entries in ladder.entries){
+            if(newPosition == entries.key){
+                println(" - Ladder!! : Move forward from $newPosition [+${entries.value}] to ${newPosition + entries.value.toInt()}")
+                return newPosition + entries.value.toInt()
+            }
+        }
+        for(entries in snake.entries){
+            if(newPosition == entries.key){
+                println(" - Snake!! : Move back from $newPosition [${entries.value}] to ${newPosition + entries.value.toInt()}")
+                return newPosition + entries.value.toInt()
+            }
+        }
+            return newPosition
+    }
+}
+interface Movement{
+    fun rolledDice():Int{return 0}
+    fun moveTo(){}
+    fun trapSnake(){}
+    fun getLadder(){}
 
 }
-
-fun startAutoPlay(){
-
-
-    var rules = Rules("Player1", PlayerColor.RED)
-    //rules.rolldice
-
-    var dices = OnBoard()
-    rules.move(Players("",PlayerColor.RED),0,dices.diceRoll())
-
-}
-
-class Reward : Players("Player2", PlayerColor.BLACK){
-   // var board: Array<Int> = Array(100, init = 0)
-   // var ladder: ArrayList<String> = ArrayList()
-    var moves: ArrayList<String> = ArrayList()
-    fun move(){  }
-}
-
-
 
 fun main(){
-// prints new sequence every time
 
-    var onboard = OnBoard()
-    var diceRo: Int = onboard.diceRoll()
-    println(diceRo)
-    var rules = Rules("Player1", PlayerColor.RED)
+    //var rolled = Rolled()
+    var boardRules = BoardRules("", PlayerColor.UNKNOWN)
 
-    rules.addPlayers()
-    rules.move(Players("Player1",PlayerColor.RED),2,diceRo)
+    boardRules.addPlayers(Players("Player1",PlayerColor.RED))
+    boardRules.addPlayers(Players("Player2",PlayerColor.BLUE))
+    boardRules.addPlayers(Players("Player3",PlayerColor.BLACK))
+    boardRules.addPlayers(Players("Player4",PlayerColor.YELLOW))
 
+    do{
+        boardRules.moveTo(Players("Player1",PlayerColor.RED),boardRules.rolledDice())
+        boardRules.moveTo(Players("Player2",PlayerColor.BLUE),boardRules.rolledDice())
+        boardRules.moveTo(Players("Player3",PlayerColor.BLACK),boardRules.rolledDice())
+        boardRules.moveTo(Players("Player4",PlayerColor.YELLOW),boardRules.rolledDice())
+    }while(!boardRules.haveWinner)
 
-
-
-
-    var trap:Players = Players("Player1", PlayerColor.RED)
-    //Join Player
-    //Start
-    //Roll -> Rules -> Move
-    //Next Player
-    }
+}

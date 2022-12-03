@@ -57,13 +57,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Kotlin.Activity5_dKt">
-    <configuration name="Activity4_aKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="activity4_a.Activity4_aKt" />
-      <module name="kodegoexercises_almonte.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Activity4_bKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="activity4_b.Activity4_bKt" />
       <module name="kodegoexercises_almonte.main" />
@@ -92,13 +85,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FoodExerciseKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FoodExerciseKt" />
+      <module name="kodegoexercises_almonte.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.Activity5_dKt" />
+        <item itemvalue="Kotlin.FoodExerciseKt" />
         <item itemvalue="Kotlin.Activity5_cKt" />
         <item itemvalue="Kotlin.Activity5_aKt" />
         <item itemvalue="Kotlin.Activity4_bKt" />
-        <item itemvalue="Kotlin.Activity4_aKt" />
       </list>
     </recent_temporary>
   </component>
@@ -110,13 +110,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665156753316</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Initial Commit">
-      <created>1665394336967</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1665394336967</updated>
     </task>
     <task id="LOCAL-00014" summary="Initial Commit">
       <created>1665408652911</created>
@@ -454,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669897694506</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Initial Commit">
+      <created>1669901512225</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1669901512225</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -471,14 +471,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="JetRunConfigurationType">
-        <watch expression="findUnique" />
-        <watch expression="charA" />
-        <watch expression="charB" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>
