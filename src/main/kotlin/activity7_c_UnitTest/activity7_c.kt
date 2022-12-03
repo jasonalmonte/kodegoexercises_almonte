@@ -1,9 +1,9 @@
 package activity7_c_UnitTest
 import activity5_c.Product
-sealed class Errors{
-    class InsufficientStock(message: String = "Not Enough stock") : Exception(message)
-    class InsufficientCash(message: String = "Insufficient") : Exception(message)
-    class ProductNotFind(message: String = "Not") : Exception(message)
+sealed class Errors(message: String):  Exception(message){
+    class InsufficientStock(message: String = "Not Enough stock") : Errors(message)
+    class InsufficientCash(message: String = "Insufficient") : Errors(message)
+    class ProductNotFind(message: String = "Not") : Errors(message)
 }
 
 

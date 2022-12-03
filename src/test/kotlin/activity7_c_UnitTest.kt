@@ -10,7 +10,7 @@ internal class CartTester{
     @Test
     fun addItemCheck(){
         assertThrows<Errors.ProductNotFind>{
-            carts.addItems("Mango")
+            carts.addItems("Mangoo")
         }
     }
 
